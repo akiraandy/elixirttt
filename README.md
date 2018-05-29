@@ -1,4 +1,4 @@
-# Game
+# Tic Tac Toe [![Build Status](https://travis-ci.org/akiraandy/elixirttt.svg?branch=master)](https://travis-ci.org/akiraandy/elixirttt)
 
 **TODO: Add description**
 
