@@ -2,16 +2,6 @@ defmodule Board do
   @moduledoc """
   Board for TTT
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Game.hello
-      :world
-
-  """
   def place_marker(board, marker, space) do
     List.replace_at(board, space - 1, marker)
   end
