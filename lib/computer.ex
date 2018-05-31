@@ -1,15 +1,10 @@
 defmodule Computer do
-  import Board
-  import Rules
 
   defimpl Player, for: Computer do
   end
 
   def take_turn(board) do
-    move = 
-      board
-      |> minimax(0, :x)
-    Board.place_marker(board, :x, move) 
+    if !Board.is_empty?(board), do: Board.place_marker(board, :x, minimax(board, 0, :x)), else: Board.place_marker(board, :x, 1)
   end
 
   def minimax(board, depth, player) do

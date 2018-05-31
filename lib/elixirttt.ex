@@ -12,7 +12,11 @@ defmodule Game do
       :world
 
   """
-  def hello do
-    :world
+  def play do
+    result = 
+      [1, 2, 3, 4, 5, 6, 7, 8, 9]
+      |> GameLoop.play
+    IO.puts Messages.display_board(result)
+    IO.puts Messages.end_game(result)
   end
 end
